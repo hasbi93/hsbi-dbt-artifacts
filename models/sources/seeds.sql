@@ -17,7 +17,7 @@ select
     cast(null as {{ type_string() }}) as checksum,
     cast(null as {{ type_json() }}) as meta,
     cast(null as {{ type_string() }}) as alias,
-    cast(null as VARCHAR(MAX)) as all_results
+    cast(null as TEXT) as all_results
 from dummy_cte
 where 1 = 0
 
