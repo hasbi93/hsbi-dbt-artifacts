@@ -19,7 +19,7 @@ select
     {% if target.type == "snowflake" %}, cast(null as {{ type_array() }}) as freshness
     {% else %}, cast(null as {{ type_json() }}) as freshness
     {% endif %},
-    cast(null as VARCHAR(MAX)) as all_results
+    cast(null as TEXT) as all_results
 from dummy_cte
 where 1 = 0
 
