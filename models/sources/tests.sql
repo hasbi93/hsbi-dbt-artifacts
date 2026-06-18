@@ -15,6 +15,6 @@ select
     , cast(null as {{ type_string() }}) as package_name
     , cast(null as {{ type_string() }}) as test_path
     , cast(null as {{ type_array() }}) as tags
-    , cast(null as TEXT) as all_results
+    , cast(null as VARCHAR(8000)) as all_results
 from dummy_cte
 where 1 = 0
