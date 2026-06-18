@@ -20,7 +20,7 @@ select
     cast(null as {{ type_array() }}) as tags,
     cast(null as {{ type_json() }}) as meta,
     cast(null as {{ type_string() }}) as alias,
-    cast(null as TEXT) as all_results
+    cast(null as VARCHAR(8000)) as all_results
 from dummy_cte
 where 1 = 0
 
